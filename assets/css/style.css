@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,700&family=Roboto:ital,wght@0,100;0,500;0,700;1,300;1,900&display=swap');
+
+/* Global Variables Colors */
+ 
+:root {
+    --dark-primary:#1b1f24;
+    --primary: #12bdff;
+    --white: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito Sans' sans-serif;
+}
+
+header {
+    background-color: #1b1f24;
+    padding: 20px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/* Logo */
+header .logo{
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--primary)
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin-right: 20px;
+    
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ui li a:hover {
+    color: red;
+}
+
+/* Header Buttons */
+header button{
+    background-color: var(--dark-primary) ;
+    border:1px solid var(--primary) ;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+header button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--white);
+}
