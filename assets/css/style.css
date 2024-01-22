@@ -5,6 +5,7 @@
 :root {
   --dark-primary: #1b1f24;
   --primary: #12bdff;
+  --primary-hover: #0c6487;
   --white: #fff;
 }
 
@@ -43,26 +44,14 @@ header ul li {
 ul li a {
   color: white;
   text-decoration: none;
+  font-weight: 600;
 }
 
 header ui li a:hover {
   color: red;
 }
 
-/* Header Buttons */
-header button {
-  background-color: var(--dark-primary);
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  font-weight: 700;
-  padding: 10px 20px;
-  border-radius: 50px;
-}
-header button:hover {
-  cursor: pointer;
-  background-color: var(--primary);
-  color: var(--white);
-}
+
 
 /* Section Hero Homepage */
 section.hero-section {
@@ -107,8 +96,38 @@ ul .social-icons {
   color: red;
 }
 /* Hero Buttons */
+.hero-buttons{
+     margin-right: 10px;
+     
+}
 .btn {
   padding: 10px 20px;
   border-radius: 2px;
   border: none;
+  cursor: pointer;
 }
+
+.btn.btn-primary{
+    background-color: var(--primary);
+    color: var(--dark-primary);
+    font-weight: 700;
+}
+.btn.btn-primary:hover{
+background-color: var(--primary-hover);     
+
+}
+.btn-dark-outlined{
+    background-color: var(--dark-primary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+.btn-dark-outlined:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600 ;
+  }
