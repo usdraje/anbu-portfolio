@@ -7,6 +7,7 @@
   --primary: #12bdff;
   --primary-hover: #0c6487;
   --white: #fff;
+  --about-setion: #262D37;
 }
 
 * {
@@ -175,4 +176,63 @@ background-color: var(--primary-hover);
 }
 .about-section--desc ol li strong {
     color: var(--white);
+}
+
+/* Work Section */
+.works-section {
+    background-color: var(--dark-primary);
+    color: var(--white);
+    padding: 60px 60px;
+    text-align: center;
+}
+.works-section__title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.works-section-item{
+    display: flex;
+    justify-content: center;
+}
+.works-section-box {
+    background-color:var(--about-setion);
+    padding: 30px;
+    max-width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 100px;
+    
+
+}
+.works-section-box:hover{
+    background-color: rgb(33, 17, 17);
+}
+.works-section-box p{
+    color: grey;
+    padding-top: 10px;
+    
+}
+.works-section-box a {
+    color:var(--primary) ;
+    text-decoration: none;
+    margin-top: 10px;
+    
+
+}
+.works-section-box__desc {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+ 
+.works-section-box__icon {
+  background-color: var(--primary-hover);  
+  width: auto;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.works-section-box__icon:hover{
+    background-color: var(--primary-hover);
+    
 }
